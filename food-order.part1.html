@@ -1,0 +1,19 @@
+<script>
+  //data
+  foodName       = "Salad"//String 
+  foodAvailQ     = 10
+  foodPriceValue = 15.00 //Number 
+  foodPriceUnits = "MDL" //String
+  chargeDelivery =  80    // MDL
+  
+  clientQuantity = parseInt(prompt( " We have\n\n" + foodName + "\n\nHow many?"))
+  if(foodAvailQ >= clientQuantity){
+    totalCost = foodPriceValue * clientQuantity
+    alert("you've ordered " + clientQuantity+ "\nbill " + totalCost + foodPriceUnits+"\nYou received free delivery(Special promotion)")
+  } else {
+    alert("Sorry,we can offer only:" + foodAvailQ +" Salad")
+  }
+  
+  
+    //Hw1:apply a delivery tax -done
+</script>
